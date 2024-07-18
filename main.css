@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(60deg, #00d2ff 0%, #3a47d5 100%);
+    font-family: "Raleway", sans-serif;
+    height: 100vh;
+}
+
+#container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: rgb(255, 255, 88);
+    margin-bottom: 20px;
+}
+
+#playgrid {
+    width: 380px;
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 10px;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.box:hover {
+    background: #f0f0f0;
+}
+
+.mark_x::before {
+    content: "X";
+    color: red;
+    cursor: no-drop;
+}
+
+.mark_o::before {
+    content: "O";
+    color: rgb(125, 6, 161);
+    cursor: no-drop;
+}
+
+#info {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#difficulty {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btnrest {
+    background-color: bisque;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#btnrest:hover {
+    background-color: #ffdd99;
+    transform: scale(1.05);
+}
+
+#btnrest:active {
+    background-color: #ffcc66;
+}
+
